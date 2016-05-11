@@ -22,21 +22,19 @@ names = ['Michael', 'Bob', 'Tracy']
 for name in names:
     print(name)
 
-# 打印数字 0 - 9
-for x in range(10):
-    print(x)
-# 计算1+2+3+...+100:
-sum = 0
-n = 1
-while n <= 100:
-    sum = sum + n
-    n = n + 1
-print(sum)
+d={'mike':85,'bob':75,'tracy':80}
+print(d['mike'])
+print('thomas' in d )
+print(d.get('thomas',-1))
+d.pop('bob')
+print(d)
 
-# 计算1x2x3x...x100:
-acc = 1
-n = 1
-while n <= 100:
-    acc = acc * n
-    n = n + 1
-print(acc)
+s=set([1,2,2,3,4,5,6])
+print(s)
+s.add(8)
+print(s)
+
+s2=set([9,2,3,4,5,6])
+print(s&s2)
+print(s|s2)
+s.remove(4)
